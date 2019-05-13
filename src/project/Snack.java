@@ -6,6 +6,7 @@ public class Snack {
         
     // }
     
+    private static int maxId;
     private int id;
     private String name;
     private int quantity;
@@ -13,7 +14,8 @@ public class Snack {
     private int machine_id;
 
     public Snack(int id, String name, int quantity, double cost, int machine_id){
-        this.id = id;
+        maxId++;
+        this.id = maxId;
         this.name = name;
         this.quantity = quantity;
         this.cost = cost;
@@ -44,16 +46,12 @@ public class Snack {
 
     // SETTERS/MUTATORS
 
-    public void setId(int id){
-        this.id = id;
-    }
-
     public void setName(String name){
         this.name = name;
     }
 
-    public void setQuantity(int quantity){
-        this.quantity = quantity;
+    public void addQuantity(int quantity){
+        this.quantity += quantity;
     }
 
     public void setCost(double cost){
@@ -64,6 +62,9 @@ public class Snack {
         this.machine_id = machine_id;
     }
 
-    
-    
+    public void buySnack(int quantity)
+    {
+        this.quantity -= quantity;
+    }
+
 }

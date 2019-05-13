@@ -32,7 +32,7 @@ Snack has methods (so can)
 * get quantity
 * add quantity when given how many to add
 * buy snack when given how many to buy
-* get total cost given a quantity
+* get total cost given a quantity ??
 
 
 ## Vending Machine
