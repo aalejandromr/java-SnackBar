@@ -33,13 +33,23 @@ public class Customer
         this.name = name;
     }
 
-    public void setCash(double cash)
-    {
-        this.cash = cash;
-    }
+    // public void setCash(double cash)
+    // {
+    //     this.cash = cash;
+    // }
 
     public double getCash()
     {
         return this.cash;
+    }
+
+    public void addCash(double cash)
+    {
+        this.cash += cash;
+    }
+
+    public void cashUsed(double cash)
+    {
+        this.cash -= cash;
     }
 }
