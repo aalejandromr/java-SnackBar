@@ -36,5 +36,10 @@ public class Customer
   {
     return cash;
   }
+
+  public void addCash(double cash)
+  {
+    this.cash += cash;
+  }
   
 }
